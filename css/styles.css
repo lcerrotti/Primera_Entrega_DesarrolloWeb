@@ -1,0 +1,470 @@
+/* body */
+
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+
+/* BLOGS */
+
+.section-blogs {
+    margin-left: 15%;
+    margin-bottom: 105%;
+}
+
+
+.blog-view {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 570px;
+    align-items: center;
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 70px;
+    margin-top: 40px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 5px;
+    cursor       : pointer;
+}
+
+.blog-view-header {
+    background-color: rgb(255, 255, 255);
+    width: 1200px;
+    height: 480px;
+    align-items: center;
+    float: left;
+    margin-left: 1%;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 5px;
+    cursor       : pointer;
+}
+
+.image-blog-view {
+    width: 350px;
+    height: 270px;
+    
+}
+
+.image-blog-view-header {
+    width: 650px;
+    height: 480px;
+    margin-left: 29.6%;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+}
+
+
+.title-blog-view {
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.title-blog-view-header {
+    width: 400px;
+    height: 10px;
+    padding-left: 2%;
+    padding-top: 2%;
+    margin-right: 0px;
+    position: absolute;
+    
+}
+
+.description-blog-view {
+    background-color: rgb(255, 255, 255);
+    width: 270px;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.description-blog-view-header {
+    width: 480px;
+    height: 380px;
+    padding-left: 1.3%;
+    padding-top: 5%;
+    position: absolute;
+    
+}
+
+
+/* Index_Blogs */
+.blog-view-i {
+    background-color: rgb(255, 255, 255);
+    width: 370px;
+    height: 580px;
+    align-items: center;
+    float: left;
+    margin-left: 15px;
+    margin-right: 70px;
+    margin-bottom: 10%;
+    margin-top: 35%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 5px;
+    cursor       : pointer;
+}
+
+
+.image-blog-view-i {
+    width: 370px;
+    height: 300px;
+    
+}
+
+.title-blog-view-i {
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.description-blog-view-i {
+    background-color: rgb(255, 255, 255);
+    width: 270px;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.section-blogs-i {
+    background-color: beige;
+    margin-bottom: 10%;
+}
+
+/* Index_Bienvenida */
+
+.section-index {
+    margin-left: 15%;
+    margin-bottom: 70%;
+}
+
+
+.section-welcome {
+    background-color: rgba(33,37,41,255);
+    height: 600px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 0px;
+}
+
+
+.article-welcome {
+    background-color: rgb(100, 100, 100);
+   
+}
+
+.welcome-title {
+    font    : 1.1em/1.1em "handwriting", sans-serif;
+    color: azure;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    font-size: 50px;
+    position: absolute;
+}
+
+.welcome-sub-title {
+    font    : 1.1em/1.1em "handwriting", sans-serif;
+    color: azure;
+    margin-left: 10%;
+    margin-top: 11%;
+    font-size: 15px;
+    width: 600px;
+    position: absolute;
+}
+
+.welcome-image {
+    color: azure;
+    margin-top: 2.5%;
+    margin-left: 55%;
+    font-size: 15px;
+    width: 550px;
+    height: 450px;
+    float: left;
+    position: absolute;
+}
+
+/* Index_Registro */
+
+.card-registro {
+    width: 500px;
+    height: 300px;
+    background-color: rgba(43, 43, 43, 0.034);
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 1%;
+    position: absolute;
+}
+
+.reg-form {
+    
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 20%;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+}
+
+.form-input-reg {
+    font    : 1.1em/1.1em "handwriting", sans-serif;
+    padding : 0 20px;
+    margin  : 10px;
+    width   : 400px;
+    height: 30px;
+    
+}
+
+.button-reg {
+    margin-top: 17%;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    
+}
+
+.p-registro {
+    color: black;
+    margin-left: 55%;
+    margin-top: 5%;
+    border-top: 5%;
+    position: absolute;
+}
+
+.p-registro-item {
+    font    : 1.1em/1.1em "handwriting", sans-serif;
+    margin-top: 7%;
+    margin-bottom: 7%;
+
+}
+
+/* TITULOS */
+
+.title-contact {
+    font    : 2em/1.1em "handwriting", sans-serif;
+    padding-left: 10%;
+}
+
+
+
+/* navbar */
+
+.navbar {
+    background-color: rgba(33,37,41,255);
+    padding-left: 75%;
+    padding-top: 15px;
+    height: 40px;
+    
+}
+
+.nav-item {
+    font    : 1em/1.1em "handwriting", sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    color: rgb(227, 230, 230);
+    
+}
+
+/* contact-form */
+
+.contact-form {
+    
+    padding-left: 35%;
+    padding-top: 5%;
+    width: 100px;
+    height: 200px;
+    margin-bottom: 27%;
+}
+
+.form-input {
+    font    : 1.1em/1.1em "handwriting", sans-serif;
+    padding : 0 20px;
+    margin  : 5px;
+    width   : 400px;
+    height: 30px;
+    
+}
+
+.form-textarea {
+    font    : 1.1em/1.1em "handwriting", sans-serif;
+    padding : 0 20px;
+    margin  : 5px;
+    width   : 400px;
+    height: 200px;
+    
+}
+
+.button-contact {
+    font         : sans-serif;
+    border-radius: 5px;
+    cursor       : pointer;
+    width: 200px;
+    height: 50px;
+    
+}
+
+.file-contact {
+    font         : sans-serif;
+    border-radius: 5px;
+    cursor       : pointer;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-bottom: 10px;
+    width: 500px;
+    height: 20px;
+    
+}
+
+/* perfil */
+
+
+.image-perfil {
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    margin-top: 1%;
+    margin-left: 15%;
+    position: absolute;
+}
+
+.h1-title-form {
+    margin-top: 2%;
+    margin-left: 8%;
+}
+
+.h1-title-blogs {
+    margin-top: 1%;
+    margin-left: 75%;
+}
+
+
+.h1-perfil-data {
+    font: 1em/1em "handwriting", sans-serif;
+    padding-left: 80px;
+    margin-top: 100%;
+    
+}
+
+.h2-perfil-data {
+    font: 1em/1em "handwriting", sans-serif;
+    padding-left: 42px;
+    margin-top: 7%;
+    
+}
+
+.change-data {
+    margin-left: 31%;
+    margin-top: 5%;
+    
+}
+
+.your-blogs {
+    margin-left: 75%;  
+    
+    
+}
+
+.your_blogs-item {
+    background-color: rgba(78, 74, 74, 0.24);
+    width: 350px;
+    height: 50px;
+    margin-left: 75%;
+    border-radius: 6%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+}
+
+.blog-item-p {
+    font    : 1em/1.1em "handwriting", sans-serif;
+    padding-top: 1px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-left: 12px;
+    color: rgb(45, 46, 46);   
+    position: absolute;
+   
+}
+
+
+
+/* About */
+
+
+.image-about {
+    
+    width: 250px;
+    height: 250px;
+    border-radius: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+    position: absolute;
+}
+
+.p-about-data {
+    font: 1.5em/1em "handwriting", sans-serif;
+    margin-left: 40%;
+    margin-top: 5%;
+    width: 450px;
+}
+
+
+.h2-about-data {
+    font: 1em/1em "handwriting", sans-serif;
+    padding-left: 0px;
+    margin-top: 1%;
+    
+}
+
+.about-description {
+    width: 370px;
+    margin-left: 40%;
+    margin-top: 7%;
+    position: absolute;
+}
+
+.button-contact {
+    margin-top: 30%;
+    margin-left: 40%;
+    margin-bottom: 10%;
+}
+
+.about-section {
+    margin-left: 15%;
+    margin-bottom: 15%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(43, 43, 43);
+    color: aliceblue;
+    height: 50px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.footer-copy {
+    padding-top: 1%;
+    margin-left: 3%;
+    font    : 0.8em/1.1em "handwriting", sans-serif;
+}
+
+.footer-space {
+    margin-top: 25%;
+}
+
