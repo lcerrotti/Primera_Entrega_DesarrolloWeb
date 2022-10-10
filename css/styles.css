@@ -359,6 +359,7 @@ body {
 /* contact-form */
 
 .contact-form {
+    background-color: aliceblue;
     /*
     padding-left: 35%;
     padding-top: 5%;
@@ -369,6 +370,7 @@ body {
 }
 
 .form-input {
+    background-color: aliceblue;
     /*
     font    : 1.1em/1.1em "handwriting", sans-serif;
     padding : 0 20px;
@@ -379,6 +381,7 @@ body {
 }
 
 .form-textarea {
+    background-color: aliceblue;
     /*
     font    : 1.1em/1.1em "handwriting", sans-serif;
     padding : 0 20px;
@@ -389,6 +392,7 @@ body {
 }
 
 .button-contact {
+    background-color: aliceblue;
     /*
     font         : sans-serif;
     border-radius: 5px;
@@ -399,6 +403,7 @@ body {
 }
 
 .file-contact {
+    background-color: aliceblue;
     /*
     font         : sans-serif;
     border-radius: 5px;
