@@ -3,6 +3,10 @@
 
 /* posicionamiento */
 
+.margins{
+    margin: 3%;
+}
+
 
 /* FOOTER */
 footer {
@@ -18,4 +22,18 @@ footer {
 
 .footer-space {
     margin-top: 10%;
+}
+
+/* animaciones */
+
+.zoom {
+    background-color: rgb(255, 255, 255);
+    transition: transform .2s; 
+    width: 1px;
+    height: 1px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.01);
 }

@@ -11,23 +11,45 @@
 </head>
 <body>
 
-        
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <span class="navbar-brand mb-0 h1 text-white">Blog-Coderhouse  </span>
-                    <div>
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link active text-white h7" href="./index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link active text-white h7" href="./pages/contacto.html">Contacto</a></li>
-                            <li class="nav-item"><a class="nav-link active text-white h7" href="./pages/about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link active text-white h7" href="./pages/blog.html">Blogs</a></li>
-                            <li class="nav-item"><a class="nav-link active text-white h7" href="./pages/perfil.html">Perfil</a></li>
-                        </ul>
-                    </div>
-            </div>
+          <a class="navbar-brand text-white disabled" href="#">Blog-CoderHouse</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="./pages/about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Blogs
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./pages/blog.html">Index Blogs</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Crear un Post</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="./pages/perfil.html">Perfil</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>
+          </div>
         </div>
     </nav>
+
 
     <!-- ========== Header ========== -->
     
@@ -132,14 +154,14 @@
         <div class="container m-2">
             <div class="container">
 
-                <div>
+                <div class="margins">
                     <h3>Contenido Destacado</h3>
                 </div>
 
                 <div class="row mt-lg-2">
 
                     <div class="col mt-5">
-                        <div class="card" style="width: 22rem; height: 40rem;">
+                        <div class="card shadow rounded-3 zoom" style="width: 22rem; height: 40rem;">
                             <img src="./Images/imagen1.jpg" class="card-img-top" alt="..." width="500" height="300">
                             <div class="card-body">
                             <h5 class="card-title">Titulo 1</h5>
@@ -150,7 +172,7 @@
                     </div>
 
                     <div class="col mt-5">
-                        <div class="card" style="width: 22rem; height: 40rem;">
+                        <div class="card shadow rounded-3 zoom" style="width: 22rem; height: 40rem;">
                             <img src="./Images/imagen2.jpg" class="card-img-top" alt="..." width="500" height="300">
                             <div class="card-body">
                             <h5 class="card-title">Titulo 2</h5>
@@ -161,7 +183,7 @@
                     </div>
 
                     <div class="col mt-5">
-                        <div class="card" style="width: 22rem; height: 40rem;">
+                        <div class="card shadow rounded-3 zoom" style="width: 22rem; height: 40rem;">
                             <img src="./Images/imagen3.png" class="card-img-top" alt="..." width="500" height="300">
                             <div class="card-body">
                             <h5 class="card-title">Titulo 3</h5>
