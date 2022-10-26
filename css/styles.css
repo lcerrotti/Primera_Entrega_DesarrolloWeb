@@ -1,33 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
 body{
  background-color: rgb(255, 255, 255);
 }
 
-/* nuevo */
+/* fonts */
+
+.card-title {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.main-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+.main-subtitle {
+    font-family: 'Libre Baskerville', serif;
+}
+
+
 /* posicionamiento */
 
 .margins{
     margin: 3%;
 }
 
-
-
-/* FOOTER */
-footer {
-    
-    grid-column-start: 1;
-    grid-column-end: -1;
-    background-color: rgb(43, 43, 43);
-    color: aliceblue;
-    height: 50px;
-    margin-top: 0%;
-    margin-bottom: 0%;
+.card-text {
+    margin-top: 20px;
 }
-
-.footer-space {
-    margin-top: 15%;
-}
-
-
 
 /* transformaciones */
 
@@ -47,3 +49,204 @@ footer {
     transform: scale(1.01);
 }
 
+/* Publicacion */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% auto auto auto;
+}
+
+            /* Publicacion */ /* User-Info */
+.user-post {
+    display: flex;
+    align-items: flex-end;
+
+    padding: 5px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.user-post-name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 50%;
+}
+
+
+.user-img {
+    margin-left: 20px;
+}
+
+
+            /* Publicacion */ /* Post-content */
+
+
+.post {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+}
+
+.post-title {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.post-subtitle {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.438);
+}
+
+.post-img {
+    max-width: 700px;
+    max-height: 540px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+
+.post-creationdate {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0, 0.438);
+}
+
+            /* Publicacion */ /* Post-comments */
+
+
+.coment-section {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+}
+
+.comment {
+    display: flex;
+    align-content: center;
+    margin-top: 5%;
+}
+
+.comment-img {
+    margin: 5px;
+}
+
+.comment-user {
+    margin: 5px;
+    color: rgba(0, 0, 0, 0.438);
+}
+
+
+.comment-item {
+    margin-left: 70px;
+}
+
+
+            /* Publicacion */ /* Post-queries */
+
+@media all and (max-width: 900px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 10% auto auto auto;
+    }
+
+    .post-img {
+        width: 500px;
+        height: 250px;
+        margin: 0%;
+    }
+
+    .post {
+        grid-column: 2 / span 3;
+        grid-row: 2;
+    }
+
+    .user-post {
+        grid-column: 1;
+        grid-row: 4;
+        content-visibility: hidden;
+    }
+
+    .coment-section {
+        grid-column: 2 / span 3;
+        grid-row: 3;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 10% auto auto auto;
+    }
+
+    .post-img {
+        width: 350px;
+        height: 200px;
+        margin-bottom: 5%;
+    }
+
+    .post {
+        grid-column: 2 / span 3;
+        grid-row: 2;
+    }
+
+    .user-post {
+        grid-column: 1;
+        grid-row: 4;
+        content-visibility: hidden;
+    }
+
+    .coment-section {
+        grid-column: 2 / span 3;
+        grid-row: 3;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 10% auto auto auto;
+        margin: 5%;
+    }
+
+    .post-img {
+        width: 350px;
+        height: 200px;
+        margin-bottom: 5%;
+    }
+
+    .post {
+        grid-column: 1 / span 5;
+        grid-row: 2;
+    }
+
+    .user-post {
+        grid-column: 1;
+        grid-row: 4;
+        content-visibility: hidden;
+    }
+
+    .coment-section {
+        grid-column: 1 / span 5;
+        grid-row: 3;
+        margin: 5%;
+    }
+}
+
+/* FOOTER */
+footer {
+    
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background-color: rgb(43, 43, 43);
+    color: aliceblue;
+    height: 50px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.footer-space {
+    margin-top: 15%;
+}
