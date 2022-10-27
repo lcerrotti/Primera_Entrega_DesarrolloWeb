@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+body {
+  background-color: #EDEDED;
+}
+
+/* colors */
+.banner-idex-blue {
+  background-color: #222836;
+}
+
+.nav-blue {
+  background-color: #222836;
+}
+
+.nav-pagination {
+  background-color: #EDEDED;
+}
+
+.card-body {
+  background-color: #222836;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.card-text {
+  color: white;
+}
+
+.card-title {
+  color: white;
+}
+
+/* fonts */
+.card-title {
+  font-family: "Libre Baskerville", serif;
+}
+
+.main-title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: xx-large;
+}
+
+.main-subtitle {
+  font-family: "Libre Baskerville", serif;
+}
+
+/* posicionamiento */
+.margins {
+  margin: 3%;
+}
+
+.card-text {
+  margin-top: 20px;
+}
+
+/* transformaciones */
+/* transformaciones */ /* ZOOM */
+.zoom {
+  background-color: rgb(255, 255, 255);
+  transition: transform 0.2s;
+  width: 1px;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.01);
+}
+
+.rounded-circle:hover {
+  transform: scale(1.01);
+}
+
+/* transformaciones */ /* Flip-photo */
+.flip-photo {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-photo-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+}
+
+.flip-photo:hover .flip-photo-inner,
+.flip-photo:focus .flip-photo-inner {
+  transform: rotateY(4deg);
+}
+
+/* Publicacion */
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 10% auto auto auto;
+}
+
+/* Publicacion */ /* User-Info */
+.user-post {
+  display: flex;
+  align-items: flex-end;
+  padding: 5px;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.user-post-name {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 50%;
+}
+
+.user-img {
+  margin-left: 20px;
+}
+
+/* Publicacion */ /* Post-content */
+.post {
+  grid-column: 2/span 2;
+  grid-row: 3;
+}
+
+.post-title {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+}
+
+.post-subtitle {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.438);
+}
+
+.post-img {
+  max-width: 800px;
+  max-height: 540px;
+  margin-bottom: 10%;
+}
+
+.post-creationdate {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgba(0, 0, 0, 0.438);
+}
+
+/* Publicacion */ /* Post-comments */
+.coment-section {
+  grid-column: 2/span 2;
+  grid-row: 4;
+}
+
+.comment {
+  display: flex;
+  align-content: center;
+  margin-top: 2%;
+}
+
+.comment-img {
+  margin: 5px;
+}
+
+.comment-user {
+  margin: 5px;
+  color: rgba(0, 0, 0, 0.438);
+}
+
+.comment-item {
+  margin-left: 70px;
+}
+
+/* Publicacion */ /* Post-queries */
+@media all and (max-width: 1100px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10% auto auto auto;
+  }
+  .post-img {
+    width: 540px;
+    height: 300px;
+    margin: 5%;
+  }
+  .post {
+    grid-column: 2/span 3;
+    grid-row: 2;
+  }
+  .user-post {
+    grid-column: 1;
+    grid-row: 4;
+    content-visibility: hidden;
+  }
+  .coment-section {
+    grid-column: 2/span 3;
+    grid-row: 3;
+  }
+}
+@media all and (max-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10% auto auto auto;
+  }
+  .post-img {
+    width: 500px;
+    height: 250px;
+    margin: 0%;
+  }
+  .post {
+    grid-column: 2/span 3;
+    grid-row: 2;
+  }
+  .user-post {
+    grid-column: 1;
+    grid-row: 4;
+    content-visibility: hidden;
+  }
+  .coment-section {
+    grid-column: 2/span 3;
+    grid-row: 3;
+  }
+}
+@media all and (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10% auto auto auto;
+  }
+  .post-img {
+    width: 400px;
+    height: 200px;
+    margin: 0%;
+  }
+  .post {
+    grid-column: 2/span 3;
+    grid-row: 2;
+  }
+  .user-post {
+    grid-column: 1;
+    grid-row: 4;
+    content-visibility: hidden;
+  }
+  .coment-section {
+    grid-column: 2/span 3;
+    grid-row: 3;
+  }
+}
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10% auto auto auto;
+  }
+  .post-img {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 5%;
+  }
+  .post {
+    grid-column: 2/span 3;
+    grid-row: 2;
+  }
+  .user-post {
+    grid-column: 1;
+    grid-row: 4;
+    content-visibility: hidden;
+  }
+  .coment-section {
+    grid-column: 2/span 3;
+    grid-row: 3;
+  }
+}
+@media screen and (max-width: 500px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10% auto auto auto;
+    margin: 5%;
+  }
+  .post-img {
+    width: 380px;
+    height: 200px;
+    margin-bottom: 5%;
+  }
+  .post {
+    grid-column: 1/span 5;
+    grid-row: 2;
+  }
+  .user-post {
+    grid-column: 1;
+    grid-row: 4;
+    content-visibility: hidden;
+  }
+  .coment-section {
+    grid-column: 1/span 5;
+    grid-row: 3;
+    margin: 5%;
+    margin-bottom: 40%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10% auto auto auto;
+    margin: 5%;
+  }
+  .post-img {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 5%;
+  }
+  .post {
+    grid-column: 1/span 5;
+    grid-row: 2;
+  }
+  .user-post {
+    grid-column: 1;
+    grid-row: 4;
+    content-visibility: hidden;
+  }
+  .coment-section {
+    grid-column: 1/span 5;
+    grid-row: 3;
+    margin-bottom: 40%;
+  }
+}
+/* FOOTER */
+footer {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  background-color: rgb(43, 43, 43);
+  color: aliceblue;
+  height: 50px;
+  margin-top: 30%;
+  margin-bottom: 0%;
+}
+
+.footer-space {
+  margin-top: 15%;
+}
+
+/*# sourceMappingURL=styles.css.map */
