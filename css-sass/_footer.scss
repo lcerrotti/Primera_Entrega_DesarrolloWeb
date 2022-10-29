@@ -1,0 +1,62 @@
+@import "colors";
+/* FOOTER */
+
+footer {
+    display: grid;
+    background-color: $footerColor;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+
+    h3 {
+        text-align: center;
+        grid-column: 2 / span 2;
+        grid-row: 4;
+        color: #EDEDED;
+        font-size: 10px;
+    }
+
+    h4 {
+
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+        color: #EDEDED;
+    }
+    
+    h5 {
+        grid-column: 4;
+        grid-row: 2;
+        text-align: center;
+        color: #EDEDED;
+    }
+
+    ul {  
+        grid-column: 4;
+        grid-row: 3;
+        text-align: center;
+        color: #EDEDED;
+    }
+
+    form {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 2;
+
+        input {
+            grid-column:  1;
+            width: 100%;
+            margin-left: 25%;
+        }
+
+        button{
+            grid-column:  2;
+            width: 25%;
+            margin-left: 45%;
+            padding: 0px;
+        }
+    }
+    
+}
+
+/* FOOTER *//* queries */
