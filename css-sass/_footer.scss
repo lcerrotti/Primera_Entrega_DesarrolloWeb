@@ -97,19 +97,24 @@ footer {
         color: #EDEDED;
 
         @include media-up(ssm) { /*mayor a 540px*/
-            grid-column: 1 / span 4;
+            grid-column: 2 / span 2;
             text-align: center;
+            padding-right: 10%;
         }
 
         @include media-up(sm) { /*mayor a 540px*/
-            grid-column: 1 / span 4;
-            text-align: center;
+            grid-column: 2 / span 2;
+            text-align: center;   
+            padding-right: 10%;
         }
 
         @include media-up(md) { /*mayor a 768px*/
             grid-column: 3 / span 2;
-            text-align: center;
-            padding-left: 20%;
+            padding-left: 30%;
+        }
+
+        a {
+            color: #EDEDED;
         }
     }
 
@@ -144,6 +149,7 @@ footer {
 
             @include media-up(md) { /*mayor a 768px*/
                 visibility: visible;
+                margin-left: 10%;
             }
             
             @include media-up(lg) { /*mayor a 1024px*/
@@ -168,6 +174,7 @@ footer {
 
             @include media-up(md) { /*mayor a 768px*/
                 visibility: visible;
+                margin-left: 20%;
                 position: inherit;
                 width: 60px;
             }
