@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+/* FOOTER */ /* queries */
 /* FOOTER */
 footer {
   display: grid;
@@ -6,30 +7,91 @@ footer {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 25% 25% 25% 25%;
 }
-footer h3 {
+footer h3 { /*COPY*/
   text-align: center;
   grid-column: 2/span 2;
   grid-row: 4;
   color: #EDEDED;
   font-size: 10px;
 }
-footer h4 {
+@media screen and (min-width: 1024px) {
+  footer h3 { /*mayor a 1024px*/
+    visibility: visible;
+    width: 80%;
+  }
+}
+footer h4 { /*CONTACTANOS*/
   grid-column: 1;
   grid-row: 2;
   text-align: center;
   color: #EDEDED;
 }
-footer h5 {
+@media screen and (min-width: 300px) {
+  footer h4 { /*mayor a 300px*/
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 540px) {
+  footer h4 { /*mayor a 540px*/
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer h4 { /*mayor a 768px*/
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer h4 { /*mayor a 1024px*/
+    visibility: visible;
+  }
+}
+footer h5 { /*REDES SOCIALES*/
   grid-column: 4;
   grid-row: 2;
   text-align: center;
   color: #EDEDED;
 }
-footer ul {
+@media screen and (min-width: 300px) {
+  footer h5 { /*mayor a 300px*/
+    grid-column: 2/span 2;
+  }
+}
+@media screen and (min-width: 540px) {
+  footer h5 { /*mayor a 540px*/
+    grid-column: 2/span 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer h5 { /*mayor a 768px*/
+    grid-column: 3/span 2;
+    padding-left: 20%;
+  }
+}
+footer ul { /*REDES SOCIALES - LINKS*/
   grid-column: 4;
   grid-row: 3;
   text-align: center;
   color: #EDEDED;
+}
+@media screen and (min-width: 300px) {
+  footer ul { /*mayor a 540px*/
+    grid-column: 1/span 4;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 540px) {
+  footer ul { /*mayor a 540px*/
+    grid-column: 1/span 4;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer ul { /*mayor a 768px*/
+    grid-column: 3/span 2;
+    text-align: center;
+    padding-left: 20%;
+  }
 }
 footer form {
   grid-column: 2/span 2;
@@ -37,10 +99,42 @@ footer form {
   display: grid;
   grid-template-columns: 2;
 }
+@media screen and (min-width: 768px) {
+  footer form { /*mayor a 768px*/
+    grid-column: 1/span 3;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer form { /*mayor a 1024px*/
+    visibility: visible;
+    grid-column: 2/span 2;
+    grid-row: 2;
+  }
+}
 footer form input {
   grid-column: 1;
-  width: 100%;
   margin-left: 25%;
+}
+@media screen and (min-width: 300px) {
+  footer form input { /*mayor a 300px*/
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 540px) {
+  footer form input { /*mayor a 540px*/
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer form input { /*mayor a 768px*/
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer form input { /*mayor a 1024px*/
+    visibility: visible;
+    margin-left: 5%;
+  }
 }
 footer form button {
   grid-column: 2;
@@ -48,8 +142,30 @@ footer form button {
   margin-left: 45%;
   padding: 0px;
 }
+@media screen and (min-width: 300px) {
+  footer form button { /*mayor a 300px*/
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 540px) {
+  footer form button { /*mayor a 540px*/
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer form button { /*mayor a 768px*/
+    visibility: visible;
+    position: inherit;
+    width: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer form button { /*mayor a 1024px*/
+    visibility: visible;
+    margin-left: 10%;
+  }
+}
 
-/* FOOTER */ /* queries */
 /* Publicacion */
 .grid-container {
   display: grid;

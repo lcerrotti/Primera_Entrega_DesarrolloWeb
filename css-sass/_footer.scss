@@ -1,4 +1,28 @@
 @import "colors";
+
+/* FOOTER *//* queries */
+
+
+$breackpoints: (
+    ssm : 300px,
+    sm : 540px,
+    md : 768px,
+    lg : 1024px
+);
+
+@mixin media-up ($breackpoint) {
+    @media screen and (min-width: map-get($breackpoints, $breackpoint)) {
+        @content;
+    }  
+}
+
+@mixin media-down ($breackpoint) {
+    @media screen and (max-width: map-get($breackpoints, $breackpoint)) {
+        @content;
+    }  
+}
+
+
 /* FOOTER */
 
 footer {
@@ -7,34 +31,86 @@ footer {
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 25% 25% 25% 25%;
 
-    h3 {
+    h3 { /*COPY*/
         text-align: center;
         grid-column: 2 / span 2;
         grid-row: 4;
         color: #EDEDED;
         font-size: 10px;
+
+        @include media-up(lg) { /*mayor a 1024px*/
+            visibility: visible;
+            width: 80%;
+        }
+
     }
 
-    h4 {
+    h4 { /*CONTACTANOS*/
 
         grid-column: 1;
         grid-row: 2;
         text-align: center;
         color: #EDEDED;
+
+        @include media-up(ssm) { /*mayor a 300px*/
+            visibility: hidden;
+        }
+
+        @include media-up(sm) { /*mayor a 540px*/
+            visibility: hidden;
+        }
+
+        @include media-up(md) { /*mayor a 768px*/
+            visibility: hidden;
+        }
+
+        @include media-up(lg) { /*mayor a 1024px*/
+            visibility: visible;
+        }
+        
     }
     
-    h5 {
+    h5 { /*REDES SOCIALES*/
         grid-column: 4;
         grid-row: 2;
         text-align: center;
         color: #EDEDED;
+        
+        @include media-up(ssm) { /*mayor a 300px*/
+            grid-column: 2 / span 2;
+        }
+
+        @include media-up(sm) { /*mayor a 540px*/
+            grid-column: 2 / span 2;
+        }
+
+        @include media-up(md) { /*mayor a 768px*/
+            grid-column: 3 / span 2;
+            padding-left: 20%;
+        }
     }
 
-    ul {  
+    ul { /*REDES SOCIALES - LINKS*/
         grid-column: 4;
         grid-row: 3;
         text-align: center;
         color: #EDEDED;
+
+        @include media-up(ssm) { /*mayor a 540px*/
+            grid-column: 1 / span 4;
+            text-align: center;
+        }
+
+        @include media-up(sm) { /*mayor a 540px*/
+            grid-column: 1 / span 4;
+            text-align: center;
+        }
+
+        @include media-up(md) { /*mayor a 768px*/
+            grid-column: 3 / span 2;
+            text-align: center;
+            padding-left: 20%;
+        }
     }
 
     form {
@@ -43,10 +119,37 @@ footer {
         display: grid;
         grid-template-columns: 2;
 
+        @include media-up(md) { /*mayor a 768px*/
+            grid-column: 1 / span 3;
+        }
+
+        @include media-up(lg) { /*mayor a 1024px*/
+            visibility: visible;
+            grid-column: 2 / span 2;
+            grid-row: 2;
+        }
+
+
         input {
             grid-column:  1;
-            width: 100%;
             margin-left: 25%;
+
+            @include media-up(ssm) { /*mayor a 300px*/
+                visibility: hidden;
+            }
+
+            @include media-up(sm) { /*mayor a 540px*/
+                visibility: hidden;
+            }
+
+            @include media-up(md) { /*mayor a 768px*/
+                visibility: visible;
+            }
+            
+            @include media-up(lg) { /*mayor a 1024px*/
+                visibility: visible;
+                margin-left: 5%;
+            }
         }
 
         button{
@@ -54,9 +157,31 @@ footer {
             width: 25%;
             margin-left: 45%;
             padding: 0px;
+
+            @include media-up(ssm) { /*mayor a 300px*/
+                visibility: hidden;
+            }
+
+            @include media-up(sm) { /*mayor a 540px*/
+                visibility: hidden;
+            }
+
+            @include media-up(md) { /*mayor a 768px*/
+                visibility: visible;
+                position: inherit;
+                width: 60px;
+            }
+
+            @include media-up(lg) { /*mayor a 1024px*/
+                visibility: visible;
+                margin-left: 10%;
+            }
+
         }
     }
     
 }
 
-/* FOOTER *//* queries */
+
+
+
