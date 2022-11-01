@@ -1,0 +1,21 @@
+$breackpoints: (
+    ssm : 300px,
+    sm-1 : 400px,
+    sm : 540px,
+    md : 768px,
+    lg : 1024px,
+    slg :1177px,
+    xxl : 1459px
+);
+
+@mixin media-up ($breackpoint) {
+    @media screen and (min-width: map-get($breackpoints, $breackpoint)) {
+        @content;
+    }  
+}
+
+@mixin media-down ($breackpoint) {
+    @media screen and (max-width: map-get($breackpoints, $breackpoint)) {
+        @content;
+    }  
+}
