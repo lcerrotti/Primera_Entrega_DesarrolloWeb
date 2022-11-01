@@ -338,6 +338,10 @@ $breackpoints: (
     @include media-up(ssm) { /*mayor a 300px*/
         visibility: hidden;
     }
+    
+    @include media-up(md) { /*mayor a 768px*/
+        visibility: visible; 
+    }
 
 
 }

@@ -423,6 +423,10 @@ footer {
     .comment-item {
       /*mayor a 300px*/
       visibility: hidden; } }
+  @media screen and (min-width: 768px) {
+    .comment-item {
+      /*mayor a 768px*/
+      visibility: visible; } }
 
 footer {
   grid-row: 5;
@@ -468,6 +472,9 @@ footer {
 .flip-photo:hover .flip-photo-inner,
 .flip-photo:focus .flip-photo-inner {
   transform: rotateY(4deg); }
+
+.footer-space {
+  margin-top: 10%; }
 
 body {
   background-color: #EDEDED; }
